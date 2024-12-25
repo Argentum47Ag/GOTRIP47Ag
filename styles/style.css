@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body{
+    background: #fff;
+}
+
+.header-nav {
+    background: #3e8989;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header-list {
+    display: flex;
+    gap: 30px;
+}
+
+.header-list-link {
+    font-family: "RM";
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none; 
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+/* как сделать линии под текстом мне подсказал ChatGBT */
+
+.header-list-link::after {  
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: -5px; 
+    height: 3px; 
+    background: #fff; 
+    border-radius: 3px; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+    transition: transform 0.3s ease; 
+}
+
+.header-list-link:hover::after {
+    transform: scaleX(1); 
+}
+
+.header-form {
+    display: flex;
+}
+
+.header-form-text {
+    border-radius: 20px 0 0 20px;
+    background: #fff;
+    border: none;
+    outline: none;
+    height: 35px;
+    resize: none;
+    padding: 8px 20px;
+}
+
+
+.header-form-btn{
+    border-radius: 0 20px 20px 0;
+    background: #295e5e;
+    border: none;
+    font-family: "RR";
+font-weight: 400;
+font-size: 14px;
+color: #fff;
+padding: 9px 14px;
+}
+
+.header-form-text::placeholder{
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 16px;
+    color: #898989;
+}
+
+.header-content{
+    background: url(../images/header-pic.jpg)no-repeat center /cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-content-title{
+    font-family: "RS";
+font-weight: 600;
+font-size: 80px;
+color: #fff;
+}
+
+.header-content-text{
+    font-family: "RM";
+font-weight: 500;
+font-size: 40px;
+color: #fff;
+padding-bottom: 30px;
+}
+
+.header-content-btn{
+    background: #b4436c;
+    border-radius: 30px;
+    border: none;
+    max-width: 200px;
+    width: 100%;
+    padding: 14px;
+    font-family: "IS";
+font-weight: 600;
+font-size: 18px;
+color: #fff;
+transition: 800ms;
+}
+
+.header-content-btn:hover{
+    background:  #fff;
+    color: #b4436c;
+}
+
+.main-box-one-title{
+    font-family: "IS";
+font-weight: 600;
+font-size: 40px;
+color: #3e8989;
+display: flex;
+justify-content: center;
+padding-top: 80px;
+padding-bottom: 50px;
+}
+
+.main-box-one {
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.main-box-one-right {
+    max-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.main-box-one-left-text1{
+    font-family: "RR";
+font-weight: 400;
+font-size: 18px;
+color: #000;
+}
+
+.main-box-one-left-text2{
+    font-family: "RR";
+font-weight: 400;
+font-size: 18px;
+color: #000;
+}
+
+.main-box-two-title{
+    font-family: "IS";
+font-weight: 600;
+font-size: 40px;
+color: #3e8989;
+padding-top: 97px;
+padding-bottom: 53px;
+display: flex;
+justify-content: center;
+}
+
+.main-box-two {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; 
+    padding-bottom: 20px; 
+}
+
+.main-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.main-item-box {
+    width: 263px; 
+    height: 300px;
+    background: #efefef; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box;
+}
+
+.main-item-img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.main-item-text {
+    font-family: "IS";
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    margin-top: 30px; 
+    transition: 0.5s; 
+}
+
+.main-item:hover .main-item-text {
+     color: #b4436c; 
+}
+
+
+.main-box-three {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.main-box-three-title {
+    font-family: "IS";
+    font-weight: 600;
+    font-size: 40px;
+    color: #3e8989;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.main-box-three-left{
+    max-width: 555px;
+    width: 100%;
+}
+
+.main-box-three-right {
+    text-align: right;
+}
+
+.main-box-three-text1,
+.main-box-three-text2 {
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+
+.main-box-three-email {
+    margin-top: 20px; /* Расстояние между номером и почтой */
+    padding-bottom: 104px;
+}
+
+
+.footer-nav {
+    height: 150px; 
+    background: #3e8989; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.footer-box {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-list {
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.footer-list-link {
+    font-family: "RM";
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none; 
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.footer-list-link::after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: -5px; 
+    height: 3px; 
+    background: #fff; 
+    border-radius: 3px; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+    transition: transform 0.3s ease; 
+}
+
+.footer-list-link:hover::after {
+    transform: scaleX(1); 
+}
+
+/* как сделать линии под текстом мне подсказал ChatGBT */
+
+.footer-box-text {
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 59px;
+}
+
+.main-box-one-left-img{
+    width: 100%;
+}
